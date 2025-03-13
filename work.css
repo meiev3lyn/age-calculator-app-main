@@ -82,7 +82,7 @@ button{
   .error-state input {
     border-color: hsl(0, 100%, 67%);
   }
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 375px) {
     /* Make the card narrower and reduce padding */
     .card {
       width: 355px;
