@@ -83,23 +83,19 @@ button{
     border-color: hsl(0, 100%, 67%);
   }
 @media screen and (max-width: 375px) {
-    /* Make the card narrower and reduce padding */
     .card {
       width: 355px;
       padding: 30px;
       position: static;
-      border-bottom-right-radius: 50%; /* reduce the large corner if desired */
+      border-bottom-right-radius: 50%; 
     }
   
-    /* Let the hr span the container fully */
     hr {
       width: 100%;
       float: none;
-      
       position: relative;
     }
   
-    /* Reposition or resize the button so it fits on small screens */
     button {
     margin-top: 290px;
     margin-left: 150px;
@@ -110,9 +106,7 @@ button{
         height: 22px;
     }
   
-    /* Adjust .date section to stack vertically on small screens */
     .date {
-      
       align-items: flex-start;
       gap: 20px;
     }
@@ -121,12 +115,11 @@ button{
       letter-spacing: 2px;
     }
     input {
-      width: 80px;  /* let the input stretch the full container width */
+      width: 80px; 
       font-size: 20px;
       padding: 12px;
     }
-  
-    /* Tweak output font size/spacing */
+
     .output {
       font-size: 40px;
       font-weight: bolder;
