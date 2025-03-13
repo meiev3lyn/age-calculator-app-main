@@ -1,0 +1,150 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 94%);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.date {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.date h2 {
+  font-size: 14px;
+  color: hsl(0, 1%, 44%);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+input {
+  width: 120px;
+  padding: 15px;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  border: hsl(0, 0%, 86%) solid 1px;
+  border-radius: 5px;
+}
+
+hr {
+  width: 550px;
+  float: left;
+  border-top: 1px solid hsl(0, 0%, 86%);
+}
+
+button {
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+  border-radius: 50%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 580px;
+  margin-top: 170px;
+  cursor: pointer;
+}
+
+.output span {
+  color: hsl(259, 100%, 65%);
+}
+
+.output {
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 18px;
+  padding-top: 10px;
+}
+
+.card {
+  border-radius: 20px;
+  border-bottom-right-radius: 50%;
+  background-color: white;
+  width: 700px;
+  padding: 50px;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  font-style: italic;
+  font-size: 12px;
+  color: hsl(0, 100%, 67%);
+  margin-top: 4px;
+  min-height: 1em;
+}
+
+.error-state h2 {
+  color: hsl(0, 100%, 67%);
+}
+
+.error-state input {
+  border-color: hsl(0, 100%, 67%);
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 355px;
+    padding: 30px;
+    position: static;
+    border-bottom-right-radius: 50%;
+  }
+
+  hr {
+    width: 100%;
+    float: none;
+    position: relative;
+  }
+
+  button {
+    margin-top: 290px;
+    margin-left: 150px;
+    padding: 15px;
+  }
+
+  img {
+    width: 25px;
+    height: 22px;
+  }
+
+  .date {
+
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .date h2 {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  input {
+    width: 80px;
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  .output {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+
+  .error {
+    font-size: 10px;
+    color: hsl(0, 100%, 67%);
+    margin-top: 4px;
+    min-height: 1em;
+  }
+}
